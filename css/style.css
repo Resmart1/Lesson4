@@ -122,6 +122,34 @@ body {
 	position: relative;
 }
 
+.todo__fix-button {
+	position: fixed;
+}
+
+.todo__fixed-button {
+	width: 375px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.todo__fixed {
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	width: 100%;
+	z-index: 2;
+}
+
+.todo__add {
+	cursor: pointer; 
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: 0 2px 8px rgba(0, 0, 0 , 0.25);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
 .todo__items {
 
 }
