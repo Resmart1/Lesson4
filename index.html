@@ -11,9 +11,7 @@
 <body>
 
 	<div class="wrapper">
-
 		<header class="header">
-
 			<div class="header__leftside">
 				<img src="img/time.png" alt="time" class="header__time">
 			</div>
@@ -29,7 +27,6 @@
 					<img src="img/battery.png" alt="battery" class="header__battery">
 				</div>
 			</div>
-
 		</header>
 
 		<main class="main">
@@ -41,95 +38,42 @@
 				</div>
 
 				<div class="content__subtitle">
-					5 incomplete, 5 completed
+					0 incomplete, 0 completed
 				</div>
 
 				<div class="todo">
-					<div class="todo__incomplete list">
+					<img src="img/add.png" alt="add" class="todo__add">
+					<div id="incompleteList" class="todo__incomplete list">
 						<div class="list__title">
 							<h2>
 								Incomplete
 							</h2>
 						</div>
 
-						<div class="checkbox">
-							<input id="checkbox1" type="checkbox" class="checkbox__input">
-							<label for="checkbox1" class="checkbox__label">
-								<div class="checkbox__text">
-									<div class="checkbox__title">
-										Upload 1099-R to TurboTax
-									</div>
-									<div class="checkbox__subtitle">
-										💰Finance
-									</div>
-								</div>
-							</label>
-						</div>
+						<template id="incomplete">
+							<div class="checkbox">
+								<input type="checkbox" class="checkbox__input">
+								<label class="checkbox__label">
+									<div class="checkbox__text">
+										<div class="checkbox__title">
 
-						<div class="checkbox">
-							<input id="checkbox2" type="checkbox" class="checkbox__input">
-							<label for="checkbox2" class="checkbox__label">
-								<div class="checkbox__text">
-									<div class="checkbox__title">
-										Submit 2019 tax return
-									</div>
-									<div class="checkbox__subtitle">
-										💰Finance
-									</div>
-								</div>
-							</label>
-						</div>
+										</div>
+										<div class="checkbox__subtitle">
 
-						<div class="checkbox">
-							<input id="checkbox3" type="checkbox" class="checkbox__input">
-							<label for="checkbox3" class="checkbox__label">
-								<div class="checkbox__text">
-									<div class="checkbox__title">
-										Print parking passes
+										</div>
 									</div>
-									<div class="checkbox__subtitle">
-										💞Wedding
-									</div>
-								</div>
-							</label>
-						</div>
+								</label>
+							</div>
+						</template>
 
-						<div class="checkbox">
-							<input id="checkbox4" type="checkbox" class="checkbox__input">
-							<label for="checkbox4" class="checkbox__label">
-								<div class="checkbox__text">
-									<div class="checkbox__title">
-										Sign contract, send back
-									</div>
-									<div class="checkbox__subtitle">
-										🖥️Freelance
-									</div>
-								</div>
-							</label>
-						</div>
-
-						<div class="checkbox disabled">
-							<input id="checkbox5" type="checkbox" class="checkbox__input">
-							<label for="checkbox5" class="checkbox__label">
-								<div class="checkbox__text">
-									<div class="checkbox__title">
-										Hand sanitizer
-									</div>
-									<div class="checkbox__subtitle">
-										🛒Shopping List
-									</div>
-								</div>
-							</label>
-						</div>
-
-						<div class="todo__list">
+						<div class="incomplete-Tasks-List">
 
 						</div>
 
 					</div>
 					<div class="todo__completed list">
 
-						<img src="img/add.png" alt="add" class="todo__add">
+
 
 						<div class="todo__overlay">
 							<div class="popup">
@@ -138,12 +82,14 @@
 										<div class="popup__title">
 											Введите новую задачу
 										</div>
-										<div class="popup__create">
-											<input type="text" class="popup__input">
-											<button type="submit" class="popup__btn">
-												Создать
-											</button>
+										<input type="text" class="popup__input-title">
+										<div class="popup__description">
+											Введите описание новой задачи
 										</div>
+										<input type="text" class="popup__input-description">
+										<button type="submit" class="popup__btn">
+											Создать
+										</button>
 									</form>
 								</div>
 							</div>
@@ -155,49 +101,23 @@
 							</h2>
 						</div>
 
-						<div class="checkbox disabled">
-							<input id="checkbox6" type="checkbox" class="checkbox__input" checked disabled>
-							<label for="checkbox6" class="checkbox__label">
-								<div class="checkbox__title">
-									Check on FedEx Order
-								</div>
-							</label>
-						</div>
+						<template id="completed">
+							<div class="checkbox disabled">
+								<input type="checkbox" class="checkbox__input" checked disabled>
+								<label class="checkbox__label">
+									<div class="checkbox__text">
+										<div class="checkbox__title">
 
-						<div class="checkbox disabled">
-							<input id="checkbox7" type="checkbox" class="checkbox__input" checked disabled>
-							<label for="checkbox7" class="checkbox__label">
-								<div class="checkbox__title">
-									Look at new plugins
-								</div>
-							</label>
-						</div>
+										</div>
+										<div class="checkbox__subtitle">
 
-						<div class="checkbox disabled">
-							<input id="checkbox8" type="checkbox" class="checkbox__input" checked disabled>
-							<label for="checkbox8" class="checkbox__label">
-								<div class="checkbox__title">
-									Respond to catering company
-								</div>
-							</label>
-						</div>
+										</div>
+									</div>
+								</label>
+							</div>
+						</template>
+						<div class="completed-Tasks-List">
 
-						<div class="checkbox disabled">
-							<input id="checkbox9" type="checkbox" class="checkbox__input" checked disabled>
-							<label for="checkbox9" class="checkbox__label">
-								<div class="checkbox__title">
-									Reschedule morning coffee
-								</div>
-							</label>
-						</div>
-
-						<div class="checkbox disabled">
-							<input id="checkbox10" type="checkbox" class="checkbox__input" checked disabled>
-							<label for="checkbox10" class="checkbox__label">
-								<div class="checkbox__title">
-									Check the latest on Community
-								</div>
-							</label>
 						</div>
 					</div>
 				</div>
